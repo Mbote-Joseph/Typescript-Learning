@@ -96,3 +96,47 @@ function handleError(message: string): never {
   throw new Error(message);
 }
 ```
+
+## Bad behavior of objects
+
+- When interacting with the database, we often interact with objects.
+
+```javascript
+let object ={
+    name: 'foo',
+    email: 'foo@example.com
+    isActive: true
+}
+```
+
+### Type Aliases
+
+```javascript
+// To define an object with many properties
+type Course = {
+  name: string,
+  price: number,
+  enrolled: boolean,
+  length: number,
+};
+
+function myCourse(course: Course) {
+  console.log(
+    `${course.name} - ${course.price} - ${course.enrolled} - ${course.length}`
+  );
+}
+
+let myCourses = [
+  { name: "Angular", price: 23, enrolled: true, length: 4 },
+  { name: "React", price: 20, enrolled: false, length: 3 },
+  { name: "Vue", price: 18, enrolled: true, length: 2 },
+];
+
+let text = myCourses.map((course) => {
+  myCourse(course);
+});
+
+console.log(text);
+```
+
+### Read Only definitions
