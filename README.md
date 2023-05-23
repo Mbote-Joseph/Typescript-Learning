@@ -82,3 +82,17 @@ let userId: number = 35433.5;
 
 - Using `any` disables all further type checking, and it is assumed
 - You usually want to avoid this, though, because any isn’t type-checked. Use the compiler flag noImplicitAny to flag any implicit any as an error.
+
+### Void and Never types
+
+```javascript
+// The void type
+function consoleError(message: string): void {
+  console.log(message);
+}
+
+// The never type
+function handleError(message: string): never {
+  throw new Error(message);
+}
+```
