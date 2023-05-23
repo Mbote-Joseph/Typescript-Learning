@@ -33,3 +33,52 @@
 - File has the extension of .ts
 - TS is always transpiled into JavaScript
 - Typescript is a development tool, Your project will be converted into JavaScript in production.
+
+# Types
+
+- Number
+- String
+- Boolean
+- Others are : Null, Undefined, Void, Object, Array, Tuple ..., Any, Never, Unknown
+- Using Any Type makes the code more of a JavaScript like.
+
+## Situations
+
+- A function accepts two numbers. - It ensures that the values passed to the function are actually numbers.
+- A function returns a string.
+
+## Syntax
+
+```javascript
+let variableName: type = value;
+```
+
+- All types of typescript are in lowercase.
+
+## Best practice when dealing with TypeScript
+
+- Primitive types are: string, number, boolean
+- Type Any
+- Type Array
+- number caters for both int and float values
+
+- Prevent doing the too obvious things when dealing with primitives.
+  Example
+
+```javascript
+let userId: number;
+userId: 35433.5;
+```
+
+- Instead use:
+
+```javascript
+let userId: number = 35433.5;
+```
+
+- That is the type inference capability of typescript.
+
+## Don't use any
+
+- Using `any` disables all further type checking, and it is assumed
+- You usually want to avoid this, though, because any isn’t type-checked. Use the compiler flag noImplicitAny to flag any implicit any as an error.
