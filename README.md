@@ -15,3 +15,21 @@
 
 - It is about Type Safety.
 - This ensures that mismatching errors are caught
+- If one is consistent with the type of the variable it is very easy to catch the error.
+
+### What Typescript does :
+
+- Static Checking
+- Like trying to access an object which is not defined.
+- Trying to add a number of a variable that is not a number.
+- Analyze the code as we type. That's it.
+
+### What Typescript is not :
+
+-
+
+# Writing Typescript
+
+- File has the extension of .ts
+- TS is always transpiled into JavaScript
+- Typescript is a development tool, Your project will be converted into JavaScript in production.
