@@ -195,3 +195,5 @@ seatAllotment = "middle";
 ```
 
 ### Tuples
+
+- It is a specialized array in Typescript with some restrictions.
