@@ -197,3 +197,4 @@ seatAllotment = "middle";
 ### Tuples
 
 - It is a specialized array in Typescript with some restrictions.
+- One is allowed to use all the methods of an Array. But the structure is not followed in that case.
