@@ -198,3 +198,7 @@ seatAllotment = "middle";
 
 - It is a specialized array in Typescript with some restrictions.
 - One is allowed to use all the methods of an Array. But the structure is not followed in that case.
+
+## Enums
+
+- Enums when one needs to limit the options. The users choice are restricted.
