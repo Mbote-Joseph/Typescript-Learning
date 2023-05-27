@@ -13,4 +13,8 @@ enum SeatChoices {
 }
 const hcSeat = SeatChoice.MIDDLE;
 
+SeatChoice;
+
+console.log(hcSeat);
+
 export {};
