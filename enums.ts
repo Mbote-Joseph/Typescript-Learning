@@ -10,6 +10,7 @@ enum SeatChoices {
   MIDDLE = 22,
   WINDOW,
   FOURTH = 44,
+  NEXT,
 }
 const hcSeat = SeatChoice.MIDDLE;
 
