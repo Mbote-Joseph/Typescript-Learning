@@ -5,7 +5,7 @@ enum SeatChoice {
   FOURTH,
 }
 
-enum SeatChoices {
+const enum SeatChoices {
   AISLE = 10,
   MIDDLE = 22,
   WINDOW,
